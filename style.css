@@ -110,12 +110,14 @@ article {
 
 
 .sidebar {
+    height:100%;
     grid-area:1 / 1 / 3 / 2;
     background-color: rgb(5, 31, 39);
     display:flex;
     flex-direction: column;
     gap:50px;
     padding:10px;
+    padding-bottom:30px;
 
  }
  .brand, .perseciont {
