@@ -4,8 +4,12 @@
     padding: 0;
     box-sizing: 0;
   }
+  div {
+    border:1px solid green;
+  }
   html {
-    height:100%
+    height:100%;
+    font-size: 20px;
   }
   body {
     width: 100%;
@@ -16,7 +20,7 @@
  .container {
     display:grid;
     height:100%;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 300px auto;
     grid-template-rows: 150px auto ;
  }
 
@@ -109,14 +113,24 @@
 .sidebar {
     grid-area:1 / 1 / 3 / 2;
     background-color: aqua;
-    display:grid;
-    gap:10px;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
     padding:10px;
 
  }
- .sidebar div {
-    border:1px solid red;
+ .brand, .perseciont {
+    display:flex;
+    align-items: center;
+    gap:10px;
  }
+.sitelogo {
+    height:60px;
+}
+.siteName{
+    font-size:30px;
+}
+
 
 
 
@@ -126,6 +140,30 @@
 
 
  .content {
+    height:100%;
     grid-area: 2 / 2 / 3 / 3;
-    background-color: rebeccapurple;
+    background-color: lightcoral;
+    display:grid;
+    grid-template-columns:4fr 1fr;
+    padding:10px;
+ }
+ .projectContainer {
+    display:grid;
+    gap:15px;
+ }
+.projectbox {
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    align-content: space-around;
+}
+article {
+    border:1px solid yellow;
+}
+ .project-list{
+    display:grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit,300px);
+    grid-auto-rows: auto;
+    gap:10px;
  }
