@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+  }
+  html {
+    height:100%
+  }
+  body {
+    width: 100%;
+    min-height:100vh;
+    font-family: 'Almarai', sans-serif;
+  }
+
+ .container {
+    display:grid;
+    height:100%;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 150px auto ;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .header {
+    grid-area: 1 / 2 / 2 /3;
+    background-color: pink;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    padding-top:10px;
+ }
+
+  .searchbar img, .rightside img {
+    width:30px;
+    height:30px;
+}
+
+
+.searchbar {
+    display:grid;
+    grid-template-columns:min-content auto;
+    gap:10px;
+    align-items: center;
+    padding: 0 10px;
+}
+    .search-bar {
+        border-radius: 5px;
+    }
+
+ .rightside {
+    display:flex;
+    gap:10px;
+    padding-right:30px;
+    justify-content: flex-end;
+    align-items: center;
+    
+ }
+
+ .mainuser img {
+    height:60px;
+}
+.mainuser {
+    display:grid;
+    gap:15px;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    justify-content: flex-start;
+}
+
+.headerbuttons{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+.headerbuttons button {
+    padding:10px;
+    border-radius: 5px;
+    color:white;
+    border:2px solid white;
+    background-color: rgb(82, 79, 79);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+    grid-area:1 / 1 / 3 / 2;
+    background-color: aqua;
+    display:grid;
+    gap:10px;
+    padding:10px;
+
+ }
+ .sidebar div {
+    border:1px solid red;
+ }
+
+
+
+
+
+
+
+
+ .content {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: rebeccapurple;
+ }
