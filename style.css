@@ -16,7 +16,7 @@
 
 
 
-article, div {
+article {
     border-radius: 5px;
 }
 
@@ -196,7 +196,9 @@ article {
 
 .sidebox {
     background-color: white;
-    border:10px solid white;
+    border:10px solid rgb(192, 89, 89);
+    border-radius:5px;
+    padding:5px;
 }
  .sideContent {
     display:grid;
